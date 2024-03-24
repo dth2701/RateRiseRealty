@@ -219,6 +219,7 @@ const steps = [
 const Chatbot = () => {
   return (
     <ChatBot
+      headerTitle="RateRiseRealty ChatBox"
       steps={steps}
       {...config}
 
