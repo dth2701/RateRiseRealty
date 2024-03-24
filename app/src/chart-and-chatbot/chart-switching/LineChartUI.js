@@ -16,10 +16,10 @@ const LineChartUI = () => {
       const newChartInstance = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August'],
           datasets: [{
             label: 'Sample Data',
-            data: [12, 19, 3, 5, 2, 3, 15],
+            data: [12, 19, 3, 5, 2, 3, 15, 10],
             borderColor: 'rgba(75, 192, 192, 1)',
             borderWidth: 2
           }]
