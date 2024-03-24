@@ -17,7 +17,7 @@ const CityFloorPlanSelector = () => {
 
   return (
     <div className="selector-container">
-      <div className="dropdown">
+      {/* <div className="dropdown">
         <label className="dropdown-label">City</label>
         <select className="styled-select" value={selectedCity} onChange={(e) => setSelectedCity(e.target.value)}>
           <option value="">Select</option>
@@ -25,7 +25,7 @@ const CityFloorPlanSelector = () => {
                 <option key={city} value={city}>{city}</option>
                 ))}
         </select>
-      </div>
+      </div> */}
 
       <div className="dropdown">
         <label className="dropdown-label">Floor Plan</label>

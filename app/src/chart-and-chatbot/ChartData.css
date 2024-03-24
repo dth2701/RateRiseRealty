@@ -2,16 +2,16 @@
     padding: 10px 30px;
     border: none;
     border-radius: 4px;
-    background-color: #136d2e;
+    background-color: #6e48aa;
     color: white;
     font-size: 16px;
     cursor: pointer;
     width: auto;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 20px;
   }
   .switching-button:hover {
-    background-color: #06531c;
+    background-color: #885ad2;
   }
 
   .container-chart {

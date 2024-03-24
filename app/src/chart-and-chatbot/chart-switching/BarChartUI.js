@@ -181,7 +181,7 @@ const BarChartUI = () => {
     <div>
       <input type='text' placeholder='Search city you want ... ' value={searchQuery} onChange={handleSearch} 
       className='search-city'/>
-      <button onClick={switchData} className='switching-button'>Switch City</button>
+      {/* <button onClick={switchData} className='switching-button'>Switch City</button> */}
       <h2>{`Showing data for: ${datasetLabels[selectedDataIndex]}`}</h2>
       <canvas ref={chartRef} width="400" height="300"></canvas>
     </div>
