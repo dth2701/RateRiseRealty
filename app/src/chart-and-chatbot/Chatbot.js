@@ -48,31 +48,35 @@ const steps = [
       { value: '5', label: 'Phoenix', trigger: '15' },
     ],
   },
+
+  // crime rate
   {
     id: '10',
-    message: 'The crime rate at New York is decreasing for 60% last year',
+    message: 'The crime rate at New York is since December 2022 - December 2023 Overall index crime dropped by 409 incidents, or deacreasing 0.3% (126678 vs. 127087) citywide, compared to 2023.(Source: https://www.nyc.gov/site/nypd/news/p00098/nypd-december-2023-end-of-year-citywide-crime-statistics)',
     trigger: '9',
   },
   {
     id: '12',
-    message: 'The crime rate at Los Angeles is decreasing for 10% last year',
+    message: 'The crime rate overall at Los Angeles Violent decreased more than 3% in 2023(Source:https://apnews.com/article/los-angeles-crime-police-5ec43ae9f02acfd01ce2b21cb387f3b9)',
     trigger: '9',
   },
   {
     id: '13',
-    message: 'The crime rate at Chicago is decreasing for 50% last year',
+    message: 'The crime rate at Chicago is 12.9% decreasing in homicides in comparison to 2022(Source:https://www.fox32chicago.com/news/chicago-crime-2023-police)',
     trigger: '9',
   },
   {
     id: '14',
-    message: 'The crime rate at Houston is decreasing for 90% last year',
+    message: 'The crime rate at Houston is down to 12% compared to last year, but property crimes have increased.(Source:https://www.houstonpublicmedia.org/articles/news/local/2023/05/03/450739/report-violent-crime-in-houston-down-12-compared-to-last-year-but-property-crimes-have-increased)',
     trigger: '9',
   },
   {
     id: '15',
-    message: 'The crime rate at Phoenix is decreasing for 80% last year',
+    message: 'The crime rate is down by 2% in Phoenix so far in 2023, according to police crime report.(Source:https://www.fox10phoenix.com/news/overall-crime-down-by-2-in-phoenix-so-far-in-2023-according-to-police-crime-report)',
     trigger: '9',
   },
+
+  // crime rate end
   {
     id: '9',
     message: 'Do you want to ask again?',
@@ -96,31 +100,35 @@ const steps = [
     ],
   },
 
+  // mall nearby
+
   {
     id: '16',
-    message: 'There are 3 mall nearby New York. 1. Mega City Mall, 2. United Square, 3. Wall Street.',
+    message: 'There are atleast 10 Best Mall in New York City. Some of them are: 1. Brookfield Place 2. Westfield World Trade Center 3. The Shops & Restaurants at Hudson Yards(Source: https://www.tripadvisor.com/Attractions-g60763-Activities-c26-t143-New_York_City_New_York.html)',
     trigger: '9',
   },
   {
     id: '17',
-    message: 'There are 3 mall nearby Los Angeles. 1. Small City Mall, 2. Square Space Mall, 3. Wall Street.',
+    message: 'There are atleast 10 Best Mall in Los Angeles. Some of them are: 1. Citadel Outlets 2. Universal CityWalk Hollywood 3. Beverly Center(Source: https://www.tripadvisor.com/Attractions-g32655-Activities-c26-t143-Los_Angeles_California.html)',
     trigger: '9',
   },
   {
     id: '18',
-    message: 'There are 3 mall nearby Chicago. 1. Small City Mall, 2. Square Space Mall, 3. Wall Street.',
+    message: 'There are 329 shopping malls in Chicago. The most famous is The Magnificent Mile, (Source:https://www.ncesc.com/geographic-faq/what-is-the-biggest-mall-in-chicago/)',
     trigger: '9',
   },
   {
     id: '19',
-    message: 'There are 3 mall nearby Houston. 1. Small City Mall, 2. Square Space Mall, 3. Wall Street.',
+    message: 'There are atleast 10 Best Mall in Houston. Some of them are: 1. The Galleria 2. Memorial City (Source: https://www.tripadvisor.com/Attractions-g56003-Activities-c26-t143-Houston_Texas.html)',
     trigger: '9',
   },
   {
     id: '20',
-    message: 'There are 3 mall nearby Phoenix. 1. Small City Mall, 2. Square Space Mall, 3. Wall Street.',
+    message: 'There are atleast 10 Best Mall in Phoenix. Some of them are: 1. The Acropolis Mall 2. Deer Valley Towne Center (Source:https://trip101.com/article/shopping-malls-in-phoenix) ',
     trigger: '9',
   },
+
+  // mall nearby end
 
   {
     id: '31',
@@ -133,31 +141,35 @@ const steps = [
     ],
   },
 
+  // school nearby
+
   {
     id: '21',
-    message: 'There are 4 School nearby New York. 1. Mega City Mall, 2. United Square, 3. Wall Street.',
+    message: 'There are 4,413 public schools and 356 charter schools in New York State(Source:https://data.nysed.gov/index.php)',
     trigger: '9',
   },
   {
     id: '22',
-    message: 'There are 3 School nearby Los Angeles. 1. Small City Mall, 2. Square Space Mall, 3. Wall Street.',
+    message: 'There are 592 public schools and 258 private schools in Los Angeles.(Source:https://www.publicschoolreview.com/california/los-angeles)',
     trigger: '9',
   },
   {
     id: '23',
-    message: 'There are 3 School nearby Chicago. 1. Small City Mall, 2. Square Space Mall, 3. Wall Street.',
+    message: 'There are 634 Number of schools, including district-run, charter, contract, and SAFE schools in Chicago.(Source:https://www.cps.edu/about/stats-facts/)',
     trigger: '9',
   },
   {
     id: '24',
-    message: 'There are 3 School nearby Houston. 1. Small City Mall, 2. Square Space Mall, 3. Wall Street.',
+    message: 'There are 274 public schools serving 194,607 students in Houston ISD School District.(Source:https://www.publicschoolreview.com/texas/houston-isd-school-district/4823640-school-district)',
     trigger: '9',
   },
   {
     id: '25',
-    message: 'There are 3 School nearby Phoenix. 1. Small City Mall, 2. Square Space Mall, 3. Wall Street.',
+    message: 'There are 483 public schools nearby Phoenix.(Source:https://www.publicschoolreview.com/arizona/phoenix) ',
     trigger: '9',
   },
+
+  // school nearby end
   {
     id: '26',
     options: [
@@ -169,29 +181,30 @@ const steps = [
     ],
   },
 
+  // how far your (choosen) city to another city
   {
     id: '26',
-    message: '1. New York to Los Angeles (4 mile / 3 hours ), 2. New York to Chicago (4 mile / 3 hours ), 3. New York to Houston (4 mile / 3 hours), 4. New York to Phoenix (4 mile / 3 hours).',
+    message: '1. New York to Los Angeles (4501 KM), 2. New York to Chicago (1269 km), 3. New York to Houston (2284 KM), 4. New York to Phoenix (3 872 km).',
     trigger: '9',
   },
   {
     id: '27',
-    message: '1. New York to Los Angeles (4 mile / 3 hours ), 2. New York to Chicago (4 mile / 3 hours ), 3. New York to Houston (4 mile / 3 hours), 4. New York to Phoenix (4 mile / 3 hours).',
+    message: '1. Los Angeles to New York (4501 KM), 2. Los Angeles to Chicago (3244 KM), 3. Los Angeles to Houston (2490 KM), 4. Los Angeles to Phoenix (600 KM).',
     trigger: '9',
   },
   {
     id: '28',
-    message: '1. New York to Los Angeles (4 mile / 3 hours ), 2. New York to Chicago (4 mile / 3 hours ), 3. New York to Houston (4 mile / 3 hours), 4. New York to Phoenix (4 mile / 3 hours).',
+    message: '1. Chicago to New York (1269 KM), 2. Chicago to Los Angeles (3244 KM), 3. Chicago to Houston (1744 KM), 4. Chicago to Phoenix (2819 KM).',
     trigger: '9',
   },
   {
     id: '29',
-    message: '1. New York to Los Angeles (4 mile / 3 hours ), 2. New York to Chicago (4 mile / 3 hours ), 3. New York to Houston (4 mile / 3 hours), 4. New York to Phoenix (4 mile / 3 hours).',
+    message: '1. Houston to New York(2284 KM), 2. Houston to Chicago (1744 KM), 3. Houston to Los Angeles (2490 KM), 4. Houston to Phoenix (1889 KM).',
     trigger: '9',
   },
   {
     id: '30',
-    message: '1. New York to Los Angeles (4 mile / 3 hours ), 2. New York to Chicago (4 mile / 3 hours ), 3. New York to Houston (4 mile / 3 hours), 4. New York to Phoenix (4 mile / 3 hours).',
+    message: '1. Phoenix to New York (3 872 KM), 2. Phoenix to Chicago (2819 KM), 3. Phoenix to Los Angeles (600 KM), 4. Phoenix to Houston (1889 KM).',
     trigger: '9',
   },
   
