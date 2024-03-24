@@ -1,6 +1,6 @@
 .chartAndChatbotContainer {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         width: 90%;
         justify-content: space-between;
         padding-left: 20px; /* Adjust as needed */

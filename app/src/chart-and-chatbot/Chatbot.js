@@ -5,6 +5,7 @@ const config = {
   width: '400px',
   height: '500px',
   floating: true,
+  opened: true
 };
 
 const steps = [
