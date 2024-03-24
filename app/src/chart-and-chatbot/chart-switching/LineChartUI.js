@@ -91,17 +91,42 @@ const chartInstanceRef = useRef(null);
       const years = selectedData.map(entry => entry.Year);
       const prices = selectedData.map(entry => entry.Price);
 
+        // Predicted price for 2025
+        const lastYearPrice = selectedData[selectedData.length - 2].Price; // Last year's price
+        const predictedPrice2025 = lastYearPrice ? Math.round(lastYearPrice * 1.2) : null; // Increase by 20% and round
+  
+        // Append predicted price to the dataset
+        const updatedPrices = [...prices];
+        updatedPrices[updatedPrices.length - 1] = predictedPrice2025;
+  
+         // Background color for bars
+         const backgroundColors = years.map(year => {
+          return year === 2025 ? '#6e48aa' : 'rgba(54, 162, 235, 0.2)';
+        });
+  
+        // Border color for bars
+        const borderColors = years.map(year => {
+          return year === 2025 ? '#6e48aa' : 'rgba(54, 162, 235, 1)';
+        });
+
       const newChartInstance = new Chart(ctx, {
         type: 'line',
         data: {
           labels: years,
           datasets: [{
             label: 'Price',
-            data: prices,
-            borderColor: 'rgba(75, 192, 192, 1)',
-            borderWidth: 2
-          }]
-        },
+            data: updatedPrices,
+            backgroundColor: backgroundColors,
+            borderColor: borderColors,
+            borderWidth: 3
+          },
+          {
+            label: 'Prediction Price',
+            backgroundColor: '#6e48aa', // Example color for prediction price bars
+            borderColor: '#6e48aa', // Example border color for prediction price bars
+            borderWidth: 1
+        }
+        ]},
         options: {
           scales: {
             y: {
