@@ -1,0 +1,15 @@
+    .swicthing-button {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 4px;
+    background-color: #136d2e;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    width: auto;
+    margin-top: 10px;
+  }
+  .swicthing-button:hover {
+    background-color: #06531c;
+  }
+  
