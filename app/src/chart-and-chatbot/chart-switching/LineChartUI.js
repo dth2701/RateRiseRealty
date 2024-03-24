@@ -148,7 +148,7 @@ const chartInstanceRef = useRef(null);
 
   return (
     <div>
-      <button onClick={switchData}>Switch Data</button>
+      <button onClick={switchData} className='switching-button'>Switch City</button>
       <h2>{`Showing data for: ${datasetLabels[selectedDataIndex]}`}</h2>
       <canvas ref={chartRef} width="400" height="400"></canvas>
     </div>

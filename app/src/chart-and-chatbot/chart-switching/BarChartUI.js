@@ -75,10 +75,22 @@ const BarChartUI = () => {
   const [selectedDataIndex, setSelectedDataIndex] = useState(0); // State to track selected dataset index
   const datasets = [dataAustin, dataDallas, dataFortWorth, dataHouston, dataSanAntonio]; // Array of datasets
   const datasetLabels = ['Austin', 'Dallas', 'Fort Worth', 'Houston', 'San Antonio']; // Labels for datasets
-    
+  const [searchQuery, setSearchQuery] = useState(''); // State for search query
+
   const chartRef = useRef(null);
   const chartInstanceRef = useRef(null);
   
+
+   // Function to handle search query change
+   const handleSearch = (e) => {
+    setSearchQuery(e.target.value);
+    // If search query matches a dataset label, select that dataset
+    const index = datasetLabels.findIndex(label => label.toLowerCase().includes(e.target.value.toLowerCase()));
+    if (index !== -1) {
+      setSelectedDataIndex(index);
+    }
+  };
+
   useEffect(() => {
     if (chartRef && chartRef.current) {
       if (chartInstanceRef.current) {
@@ -167,7 +179,9 @@ const BarChartUI = () => {
 
   return (
     <div>
-      <button onClick={switchData}>Switch Data</button>
+      <input type='text' placeholder='Search city you want ... ' value={searchQuery} onChange={handleSearch} 
+      className='search-city'/>
+      <button onClick={switchData} className='switching-button'>Switch City</button>
       <h2>{`Showing data for: ${datasetLabels[selectedDataIndex]}`}</h2>
       <canvas ref={chartRef} width="400" height="300"></canvas>
     </div>

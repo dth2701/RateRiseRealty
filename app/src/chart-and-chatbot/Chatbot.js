@@ -5,7 +5,6 @@ const config = {
   width: '400px',
   height: '500px',
   floating: true,
-  opened: true, // Set opened to true to show the chatbot by default
 };
 
 const steps = [
