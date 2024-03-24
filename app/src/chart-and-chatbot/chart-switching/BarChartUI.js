@@ -146,11 +146,30 @@ const BarChartUI = () => {
     setSelectedDataIndex((selectedDataIndex + 1) % datasets.length); // Cycle through datasets
   };
 
+  const [canvasHeight, setCanvasHeight] = useState(400); // Initial height
+
+  useEffect(() => {
+    const updateCanvasSize = () => {
+      const parentHeight = chartRef.current.parentNode.clientHeight;
+      setCanvasHeight(parentHeight > 200 ? 100 : 400);
+    };
+
+    window.addEventListener('resize', updateCanvasSize);
+    updateCanvasSize(); // Initial call to set canvas height
+
+    return () => {
+      window.removeEventListener('resize', updateCanvasSize);
+    };
+  }, []);
+
+  
+
+
   return (
     <div>
       <button onClick={switchData}>Switch Data</button>
       <h2>{`Showing data for: ${datasetLabels[selectedDataIndex]}`}</h2>
-      <canvas ref={chartRef} width="400" height="400"></canvas>
+      <canvas ref={chartRef} width="400" height="300"></canvas>
     </div>
   );
 }

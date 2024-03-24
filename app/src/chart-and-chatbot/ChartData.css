@@ -8,8 +8,15 @@
     cursor: pointer;
     width: auto;
     margin-top: 10px;
+    margin-bottom: 20px;
   }
   .switching-button:hover {
     background-color: #06531c;
+  }
+
+  .container-chart {
+    width: 90%;
+    height: 300px;
+    margin-bottom: 20px;
   }
   

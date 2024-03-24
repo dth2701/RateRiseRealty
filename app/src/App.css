@@ -64,3 +64,22 @@
   background-color: #06531c;
 }
 
+@media (max-width: 768px) {
+  .selector-container {
+    flex-direction: column;
+    width: 90%;
+    align-items: center; /* Center items vertically */
+  }
+
+    .dropdown {
+      width: 100%;
+    }
+
+    .styled-select, .button-container, .save-button {
+      width: 100%;
+    }
+    
+  
+  
+  
+}

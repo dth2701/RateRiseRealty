@@ -13,7 +13,7 @@ const ChartData = ({ dataSet }) => {
   };
 
   return (
-    <div>
+    <div className='container-chart'>
       {tab === 'bar' ? 
         <BarChartUI dataSet={dataSet} />
         : 
