@@ -1,28 +1,18 @@
-import React, { useState, useEffect } from 'react';
-import BarChartUI from './chart-and-chatbot/chart-switching/BarChartUI'; 
+import React, { useState } from 'react';
 
-const CityFloorPlanSelector = ({ onSave }) => {
+
+const CityFloorPlanSelector = () => {
   // State for the selected city and floor plan
   const [selectedCity, setSelectedCity] = useState('');
   const [selectedFloorPlan, setSelectedFloorPlan] = useState('');
-  const [dataSet, setDataSet] = useState(null);
 
-  useEffect(() => {
-    if (selectedCity) {
-      import(`../JSON_file/${selectedCity}.json`) 
-        .then(data => {
-          setDataSet(data.default);
-        })
-        .catch(error => console.error("Failed to load city data", error));
-    }
-  }, [selectedCity]);  
-
-  const cities = ['Austin', 'Dallas', 'FortWorth', 'Houston', 'SanAntonio'];
+  // Dummy data for cities and floor plans
+  const cities = ['New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix'];
   const floorPlans = ['Studio', '1 Bedroom', '2 Bedrooms', '3 Bedrooms'];
 
-  // Updated handler to call onSave prop with selectedCity
+  // Handler for saving the selected options
   const handleSave = () => {
-    onSave(selectedCity); // Pass the selectedCity to the callback
+    alert(`Saved! City: ${selectedCity}, Floor Plan: ${selectedFloorPlan}`);
   };
 
   return (
@@ -47,9 +37,8 @@ const CityFloorPlanSelector = ({ onSave }) => {
         </select>
       </div>
     <div className='button-container'>
-      <button className="save-button" onClick={handleSave}>Save!</button>
+        <button className="save-button">Save!</button>
     </div>
-    {dataSet && <BarChartUI dataSet={dataSet} />}
     </div>
   );
 
