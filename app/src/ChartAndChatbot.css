@@ -6,3 +6,11 @@
         padding-left: 20px; /* Adjust as needed */
         padding-right: 20px; /* Adjust as needed */
 }
+
+/* Media query for mobile-sized screens */
+@media (max-width: 768px) {
+    .chartAndChatbotContainer {
+      flex-direction: column;
+      align-items: center; /* Center items vertically */
+    }
+  }
