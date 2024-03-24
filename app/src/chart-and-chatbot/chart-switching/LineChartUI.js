@@ -112,12 +112,12 @@ const chartInstanceRef = useRef(null);
   
          // Background color for bars
          const backgroundColors = years.map(year => {
-          return year === 2025 ? '#6e48aa' : 'rgba(54, 162, 235, 0.2)';
+          return year === 2025 ? '#FF0000' : 'rgba(54, 162, 235, 0.2)';
         });
   
         // Border color for bars
         const borderColors = years.map(year => {
-          return year === 2025 ? '#6e48aa' : 'rgba(54, 162, 235, 1)';
+          return year === 2025 ? '#FF0000' : 'rgba(54, 162, 235, 1)';
         });
 
       const newChartInstance = new Chart(ctx, {
@@ -133,8 +133,8 @@ const chartInstanceRef = useRef(null);
           },
           {
             label: 'Prediction Price',
-            backgroundColor: '#6e48aa', // Example color for prediction price bars
-            borderColor: '#6e48aa', // Example border color for prediction price bars
+            backgroundColor: '#FF0000', // Example color for prediction price bars
+            borderColor: '#FF0000', // Example border color for prediction price bars
             borderWidth: 1
         }
         ]},
