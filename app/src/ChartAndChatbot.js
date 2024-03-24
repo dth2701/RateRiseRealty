@@ -7,7 +7,7 @@ const ChartAndChatbot = () => {
   return (
     <div className="chartAndChatbotContainer">
       <ChartData />
-      <Chatbot />
+      <Chatbot className='chatbot-container' />
     </div>
   )
 }

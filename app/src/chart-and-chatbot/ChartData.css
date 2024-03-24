@@ -15,8 +15,16 @@
   }
 
   .container-chart {
-    
+    width: 50%;
     height: 300px;
     margin-bottom: 20px;
   }
+
+  /* Media query for mobile-sized screens */
+@media (max-width: 768px) {
+  .container-chart {
+    width: 90%;
+    align-items: center; /* Center items vertically */
+  }
+}
   

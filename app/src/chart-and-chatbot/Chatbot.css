@@ -1,0 +1,12 @@
+/* Chatbot.css */
+.chatbot-container {
+    width: 100%;
+  }
+  
+  /* Add a media query for mobile devices */
+  @media (max-width: 768px) {
+    .chatbot-container {
+      width: 100%;
+    }
+  }
+  

@@ -1,5 +1,6 @@
 import React from 'react';
 import ChatBot from 'react-simple-chatbot';
+import './Chatbot.css'; // Import your CSS file
 
 const config = {
   width: '400px',
@@ -7,6 +8,7 @@ const config = {
   floating: true,
   opened: true
 };
+
 
 const steps = [
   {
@@ -218,12 +220,13 @@ const steps = [
 
 const Chatbot = () => {
   return (
+    <div className="chatbot-container"> {/* Apply the class here */}
     <ChatBot
       headerTitle="RateRiseRealty ChatBox"
       steps={steps}
-      {...config}
-
+      
     />
+  </div>
   );
 };
 
