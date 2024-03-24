@@ -11,12 +11,15 @@ CBRE states that “No two assets, clients or tenants are the same—that’s wh
 
 Visualizing 10 years' worth of rent data for different cities in both linear and bar graphs.
 Predicting the rent price for 2025 based on the past 9 years of data.
-Providing additional information on each city, such as crime rates, nearby malls, schools, and distances between cities. By offering these features, "RateRiseRealty" not only simplifies the process of accessing and analyzing property rate data but also enriches the decision-making process with valuable insights into local amenities and safety.
+Providing additional information on each city, such as crime rates, nearby malls, schools, and distances between cities. 
+- Fully responsive design (Good in Mobile, Table, and PC / Laptop / Computer size)
+
+By offering these features, "RateRiseRealty" not only simplifies the process of accessing and analyzing property rate data but also enriches the decision-making process with valuable insights into local amenities and safety.
 
 ### How we built it
 React for the front end and data visualization.
 The chatbot's functionality is powered by the react-simple-chatbot library, allowing rapid development and integration of conversational interfaces.
-Local city data is stored in JSON format, facilitating quick and efficient data retrieval.
+Local city data is stored in JSON format, facilitating quick and efficient data retrieval. Chart.js library is being used for showing the graph bar and linear chat.
 
 ### Challenges we ran into
 It is my team's firs time implementing ChatGPT and data visualization. Additionally, our team's limited experience with Python for data visualization prompted us to prioritize developing a user-friendly interface that could deliver value without necessitating complex technical interactions from the users' end.
