@@ -1,0 +1,66 @@
+/* ---------------------------------CityFloorPlanSelector.js------------------------- */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.selector-container {
+  display: flex;
+  gap: 10px;
+  padding-top: 20px; /* Padding at the top as specified */
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-label {
+  color: #888; /* Lighter grey for label text */
+  font-size: 1em; /* Smaller font size for the label */
+  margin-bottom: 0.5em; /* Space between label and select */
+}
+
+.styled-select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  /* Add the SVG or PNG image for the dropdown arrow here */
+  background: url('data:image/svg+xml;utf8,<svg>...</svg>') no-repeat right;
+  background-position-x: calc(100% - 10px);
+  width: 150px; /* Adjust the width as necessary */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.styled-select:focus {
+  border-color: #80bdff;
+  outline: none;
+}
+
+.styled-select:hover {
+  border-color: #06531c;
+}
+
+.save-button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 4px;
+  background-color: #136d2e;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  width: auto;
+}
+.button-container{
+  padding-top: 27px;
+}
+.save-button:hover {
+  background-color: #06531c;
+}
+
